@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ga+Maamli&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Teko:wght@300..700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Figtree", sans-serif;
+    background-color:#c7ecff ;
+}
+
+.navbar{
+    display: flex; 
+    flex-flow: row wrap;
+    height: 100px;
+    background: #F7931A;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    flex:20%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    text-align: center;
+}
+
+.logo h1{
+    font-family: "Teko", sans-serif;
+    font-size: 36px;
+    color: #ffffff ;
+    margin-left: 5%
+}
+
+/* Efeito para a logo */
+.logo h1{
+    font-family: "Teko", sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    margin-left: 5%;
+    transition: all 0.3s ease;
+}
+
+.logo h1:hover{
+    transform: scale(1.1); /* Aumenta o tamanho da logo */
+    color: rgb(0, 0, 0); /* Muda a cor da logo quando passa o mouse */
+}
+
+.menu{
+    flex:70%;
+    /* border:1px solid black; */
+    text-align:right;
+    padding:20px;
+    margin-right: 5%;
+}
+
+/* efeitos de Hover */
+.menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 10px;
+    transition: all 0.3s ease-in-out; /* transição suave */
+    position: relative;
+}
+
+.menu a:hover{
+    color: rgb(0, 0, 0);
+    border-top: 4px solid rgb(0, 0, 0);
+    transform: scale(1.1); /* aumenta o tamanho ao passar o mouse */
+}
+
+/* efeito de sombra no menu */
+.menu a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu a:hover::before{
+    opacity: 1; /* uma linha ao passar o mouse */
+}
+
+.main{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    background:#c7ecff;
+    padding: 100px;
+}
+
+.principal{
+    margin-left: 5%;
+    flex: 40%;
+    /* border: 1px solid black; */
+}
+
+.principal h2{
+    font-weight: 900;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.principal p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.img-principal{
+    margin-right: 5%;
+    flex: 40%;
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+
+section{
+    display: inline-block;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+    /* width: 90%; */
+}
+
+section h2{
+    width: 100%;
+    font-size: 60px;
+    margin: 0;
+    font-family: "Teko", sans-serif;
+}
+
+.navegaveis{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.historia1{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.historia1 img{
+    width: 100%;
+    height: auto;
+}
+
+.introducao2{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.introducao2 img{
+    width: 100%;
+    height: auto;
+}
+
+.investir3{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.investir3 img{
+    width: 100%;
+    height: auto;
+}
+
+.contato4{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.contato4 img{
+    width: 100%;
+    height: auto;
+}
+
+/* Efeito de box-shadow para um visual mais dinâmico */
+.historia1, .introducao2, .investir3, .contato4{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    text-align: center;
+    transition: all 0.3s ease; /* Transição suave para box-shadow */
+    position: relative;
+}
+
+.historia1:hover, .introducao2:hover, .investir3:hover, .contato4:hover{
+    transform: translateY(-5px); /* Sobe um pouco quando passa o mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+footer{
+    margin-top: 100px;
+    height: 300px;
+    background-color: #2C2C2C;
+    text-align: center;
+    padding: 50px;
+}
+
+.logo2-rodape{
+    font-size: 20px;
+    color: white;
+}
+
+/*estilização da página 'histoia'*/
+  .container1{
+    margin-left: 5%;
+    flex: 40%;
+}
+
+.container2{
+    margin-left: 5%;
+    flex: 40%;
+}
+
+.container1 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+  }
+
+.container2 p{
+    margin-top: 3%;
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;    
+}
+
+/*estilização da página 'introdução'*/
+.container3{
+    margin-left: 5%; 
+    flex: 40%;
+}
+
+.container4{
+    margin-left: 5%;
+    flex: 40%;
+}
+
+.container3 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.container4 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.u3{
+    font-size: 20px;
+    font-weight: 150;
+    color: #000000;
+}
+
+
+/*estilização da página'investir'*/
+.container5{
+    margin-left: 5%; 
+    flex: 40%;
+}
+
+.container5 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.uinvestir{
+    font-size: 20px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.container6{
+    margin-left: 5%; 
+    flex: 40%;
+}
+
+.container6 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.uinvestir2{
+    font-size: 20px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.container7{
+    margin-left: 5%; 
+    flex: 40%;
+}
+
+.container7 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.uinvestir3{
+    font-size: 20px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.container8{
+    margin-left: 5%; 
+    flex: 40%;
+}
+
+.container8 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.uinvestir3{
+    font-size: 20px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.container9{
+    margin-left: 5%; 
+    flex: 40%;
+}
+
+.container9 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.uinvestir4{
+    font-size: 20px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.container10{
+    margin-left: 5%; 
+    flex: 40%;
+}
+
+.container10 p{
+    font-size: 25px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.uinvestir5{
+    font-size: 20px;
+    font-weight: 150;
+    color: #000000;
+}
+
+.final{
+    font-size: 20px;
+    text-decoration: none;
+    
+}
